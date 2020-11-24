@@ -3,22 +3,22 @@ import './Tabs.css';
 
 function Tab(props){
 	const [ status, setStatus ] = useState({
-		selected: false,
-		tabIndex: 0
+		id: props.id,
+		selected: false
 	});
 
 	console.log(status)
 
 	const setActive = () => {
-		setStatus({...status, selected: true});
+		setStatus({...status, selected: !status.selected});
 	};
 
 	return(
 		<li
 			className={status.selected ? 'selected' : undefined}
-			onClick={() => setActive()}
+			onClick={setActive}
 		>
-			{props.text}
+			{props.children}
 		</li>
 	);
 };
@@ -26,9 +26,9 @@ function Tab(props){
 function Tabs(){
 	return(
 		<div>
-		  <Tab text='Home'/>
-		  <Tab text='Work'/>
-		  <Tab text='Projects'/>
+			<Tab id='home'>Home</Tab>
+			<Tab id='work'>Work</Tab>
+			<Tab id='projects'>Projects</Tab>
 		</div>
 	);
 };

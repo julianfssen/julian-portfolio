@@ -1,5 +1,6 @@
 import './App.css';
 import Section from './Section';
+import './assets/main.css';
 
 function App() {
   return (

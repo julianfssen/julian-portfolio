@@ -10,15 +10,15 @@ function Navbar(){
 		<Router>
 			<div>
 				<nav>
-					<ul>
+					<ul className='space-x-10'>
 						<li className='inline-block'>
-							<Link className='hover:text-red-500 active:text-red-700' to='/'>Home</Link>
+							<Link className='hover:text-red-500 active:text-red-700 text-3xl' to='/'>Home</Link>
 						</li>
 						<li className='inline-block'>
-							<Link className='hover:text-red-500 active:text-red-700' to='/work'>Work</Link>
+							<Link className='hover:text-red-500 active:text-red-700 text-3xl' to='/work'>Work</Link>
 						</li>
 						<li className='inline-block'>
-							<Link className='hover:text-red-500 active:text-red-700' to='/projects'>Projects</Link>
+							<Link className='hover:text-red-500 active:text-red-700 text-3xl' to='/projects'>Projects</Link>
 						</li>
 					</ul>
 				</nav>
@@ -41,14 +41,12 @@ function Navbar(){
 function Home(){
 	return (
 		<React.Fragment>
-		  <div className='flex flex-shrink-0 max-w-sm mx-auto bg-white rounded-sm shadow-md'>
-				<div>
-		      <img className='object-contain object-left rounded-l-lg' src='me_and_jq.png' alt='Me and JQ Baby' />
-				</div>
-		    <h1>Foo Siang Sen - Fullstack Developer</h1>
-		  </div>
 			<div>
-				<p>Hi, my name is Julian! I am currently working at InvestingNote, South East Asia's biggest social network for investors.</p>
+				<img className='mx-auto rounded-full h-60' src='me_and_jq.png' alt='Me and JQ Baby' />
+			</div>
+			<div className='text-3xl font-bold'>Julian Foo Siang Sen - Full Stack Developer</div>
+			<div className='text-xl'>
+				I currently work at <a href='https://www.investingnote.com/' className='hover:text-red-700 font-semibold' target='blank'>InvestingNote</a>, South East Asia's biggest social network for investors.
 			</div>
 			<div>
 				<div>Projects</div>

@@ -732,6 +732,10 @@ module.exports = {
     'disabled',
   ],
   variants: {
+		extend: {
+			textColor: ['active'],
+			transitionDuration: ['hover', 'focus'],
+		},
     accessibility: ['responsive', 'focus-within', 'focus'],
     alignContent: ['responsive'],
     alignItems: ['responsive'],

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Project from './Project';
 import Work from './Work';
 import PreviewCard from './PreviewCard';
+import IconContainer from './Icons';
 import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 import './assets/main.css';
 
@@ -50,7 +51,17 @@ function Home(){
 			  </div>
 				<div className='space-x-5'>
 					<a href='https://github.com/julianfssen' target='blank'>
-					  <FaGithub
+						<IconContainer>
+							<FaGithub />
+						</IconContainer>
+					</a>
+					<a href='https://twitter.com/julianfssen' target='blank'>
+						<IconContainer>
+							<FaTwitter />
+						</IconContainer>
+					</a>
+					<a href='https://www.linkedin.com/in/julianfoo/' target='blank'>
+					  <FaLinkedin
 						  className='inline' 
 						  color={hovered ? 'red' : null} 
 							size={28} 
@@ -58,8 +69,6 @@ function Home(){
 						  onMouseOut={() => setHover(!hovered)}
 						/>
 					</a>
-					<a href='https://twitter.com/julianfssen' target='blank'><FaTwitter className='inline' size={28}/></a>
-					<a href='https://www.linkedin.com/in/julianfoo/' target='blank'><FaLinkedin className='inline' size={28}/></a>
 				</div>
 			  <div className='text-3xl font-bold'>Julian Foo Siang Sen - Full Stack Developer</div>
 			  <div className='text-xl'>

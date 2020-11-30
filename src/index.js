@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { IconContext } from 'react-icons';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+		<IconContext>
+      <App />
+		</IconContext>
   </React.StrictMode>,
   document.getElementById('root')
 );

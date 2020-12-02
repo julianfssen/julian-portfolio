@@ -51,14 +51,22 @@ function Home(){
 			  </div>
 				<div className='space-x-5'>
 					<a href='https://github.com/julianfssen' target='blank'>
-						<IconContainer>
-							<FaGithub />
-						</IconContainer>
+					  <FaGithub
+						  className='inline' 
+						  color={hovered ? 'red' : null} 
+							size={28} 
+						  onMouseOver={() => setHover(!hovered)} 
+						  onMouseOut={() => setHover(!hovered)}
+						/>
 					</a>
 					<a href='https://twitter.com/julianfssen' target='blank'>
-						<IconContainer>
-							<FaTwitter />
-						</IconContainer>
+					  <FaTwitter
+						  className='inline' 
+						  color={hovered ? 'red' : null} 
+							size={28} 
+						  onMouseOver={() => setHover(!hovered)} 
+						  onMouseOut={() => setHover(!hovered)}
+						/>
 					</a>
 					<a href='https://www.linkedin.com/in/julianfoo/' target='blank'>
 					  <FaLinkedin
@@ -77,7 +85,7 @@ function Home(){
 			  <div>
 			  	<div className='text-3xl font-bold my-5'>Projects</div>
 			  	<div className=''>
-			  		<PreviewCard title='Test Title' description='Test Description'/>
+			  		<PreviewCard url='https://api.github.com/repos/julianfssen/mockoverflow'/>
 			  	</div>
 			  </div>
 			  <div>

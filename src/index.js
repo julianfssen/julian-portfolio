@@ -7,9 +7,7 @@ import { IconContext } from 'react-icons';
 
 ReactDOM.render(
   <React.StrictMode>
-		<IconContext>
-      <App />
-		</IconContext>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

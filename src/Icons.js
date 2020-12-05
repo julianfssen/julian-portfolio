@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
+import { IconContext } from "react-icons";
 
 function IconContainer(props) {
 	const [hovered, setHover] = useState(false);
 
 	return (
     <div
-	    className='inline' 
-	    color={hovered ? 'red' : null} 
-	  	size={28} 
-	    onMouseOver={() => setHover(!hovered)} 
-	    onMouseOut={() => setHover(!hovered)}
-	  >
-			{props.children}
+			onMouseOver={() => setHover(!hovered)}
+			onMouseOut={() => setHover(!hovered)}
+		>
+			<IconContext.Provider value={{ color: hovered ? 'red' : '', size: 28 }}>
+			  {props.children}
+			</IconContext.Provider>
 		</div>
 	)
 }

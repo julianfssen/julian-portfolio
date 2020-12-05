@@ -49,33 +49,21 @@ function Home(){
 			  <div>
 			  	<img className='mx-auto rounded-full h-60 mt-10' src='me_and_jq.png' alt='Me and JQ Baby' />
 			  </div>
-				<div className='space-x-5'>
+				<div className='flex justify-center space-x-5'>
 					<a href='https://github.com/julianfssen' target='blank'>
-					  <FaGithub
-						  className='inline' 
-						  color={hovered ? 'red' : null} 
-							size={28} 
-						  onMouseOver={() => setHover(!hovered)} 
-						  onMouseOut={() => setHover(!hovered)}
-						/>
+						<IconContainer>
+							<FaGithub />
+						</IconContainer>
 					</a>
 					<a href='https://twitter.com/julianfssen' target='blank'>
-					  <FaTwitter
-						  className='inline' 
-						  color={hovered ? 'red' : null} 
-							size={28} 
-						  onMouseOver={() => setHover(!hovered)} 
-						  onMouseOut={() => setHover(!hovered)}
-						/>
+						<IconContainer>
+							<FaTwitter />
+						</IconContainer>
 					</a>
 					<a href='https://www.linkedin.com/in/julianfoo/' target='blank'>
-					  <FaLinkedin
-						  className='inline' 
-						  color={hovered ? 'red' : null} 
-							size={28} 
-						  onMouseOver={() => setHover(!hovered)} 
-						  onMouseOut={() => setHover(!hovered)}
-						/>
+						<IconContainer>
+							<FaLinkedin />
+						</IconContainer>
 					</a>
 				</div>
 			  <div className='text-3xl font-bold'>Julian Foo Siang Sen - Full Stack Developer</div>

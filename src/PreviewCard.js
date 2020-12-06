@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './assets/main.css';
 
-function PreviewCard({ url }) {
+function PreviewCard({ url, demo_url }) {
 	const [ repoData, setRepoData ] = useState({});
 
 	const repoRequest = new Request(url);
@@ -23,8 +23,8 @@ function PreviewCard({ url }) {
 	useEffect(() => getRepos(repoRequest), []);
 
 	return (
-		<div className='mx-auto rounded-lg w-80 h-32 bg-blue-50 shadow-md'>
-			<div className='text-lg font-semibold'>
+		<div className='mx-auto rounded-lg w-80 h-36 shadow-md bg-gray-700 pt-2'>
+			<div className='text-2xl font-semibold hover:text-red-700'>
 			  <a 
 					href={repoData.html_url}
 					target='_blank'
@@ -33,7 +33,16 @@ function PreviewCard({ url }) {
 					{repoData.name}
 				</a>
 			</div>
-			<div className='text-lg'>{repoData.description}</div>
+			<div className='text-base mt-2'>{repoData.description}</div>
+			<div className='text-base mt-2 font-semibold hover:text-red-700'>{demo_url ? 
+			  <a 
+				  href='https://mockoverflow.herokuapp.com/'
+				>
+					mockoverflow.herokuapp.com
+				</a> 
+			  : ''
+				}
+			</div>
 		</div>
 	)
 }

@@ -3,7 +3,7 @@ import './assets/main.css';
 
 function Work() {
 	return (
-		<h2>Work</h2>
+		<h2>Coming soon!</h2>
 	)
 }
 

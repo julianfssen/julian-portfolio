@@ -11,12 +11,14 @@ function ProjectCard() {
 }
 
 function Project() {
-	return (
-		<div className='flex flex-shrink-0 p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md'>
-		  <div className='text-xl font-medium text-black'>Projects</div>
-			<h3>Some of the projects I've worked on</h3>
-		</div>
-	)
+	//return (
+	//	<div className='flex flex-shrink-0 p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md'>
+	//	  <div className='text-xl font-medium text-black'>Projects</div>
+	//		<h3>Some of the projects I've worked on</h3>
+	//	</div>
+	//)
+
+	return <h2>Coming soon!</h2>
 }
 
 export default Project;

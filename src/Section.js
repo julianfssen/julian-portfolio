@@ -12,15 +12,15 @@ function Navbar(){
 		<Router>
 			<div>
 				<nav>
-					<ul className='space-x-10'>
+					<ul className='space-x-10 my-10'>
 						<li className='inline-block'>
-							<Link className='hover:text-red-700 hover:underline active:text-red-500 text-3xl' to='/'>Home</Link>
+							<Link className='hover:text-red-700 active:text-red-500 text-3xl' to='/'>Home</Link>
 						</li>
 						<li className='inline-block'>
-							<Link className='hover:text-red-700 hover:underline active:text-red-500 text-3xl' to='/work'>Work</Link>
+							<Link className='hover:text-red-700 active:text-red-500 text-3xl' to='/work'>Work</Link>
 						</li>
 						<li className='inline-block'>
-							<Link className='hover:text-red-700 hover:underline active:text-red-500 text-3xl' to='/projects'>Projects</Link>
+							<Link className='hover:text-red-700 active:text-red-500 text-3xl' to='/projects'>Projects</Link>
 						</li>
 					</ul>
 				</nav>
@@ -71,13 +71,14 @@ function Home(){
 			  	I currently work at <a href='https://www.investingnote.com/' className='hover:text-red-700 font-semibold' target='blank'>InvestingNote</a>, South East Asia's biggest social network for investors.
 			  </div>
 			  <div>
-			  	<div className='text-3xl font-bold my-5'>Projects</div>
+			  	<div className='text-3xl font-bold my-6 mt-10 underline'>Projects</div>
 			  	<div className=''>
-			  		<PreviewCard url='https://api.github.com/repos/julianfssen/mockoverflow'/>
+			  		<PreviewCard url='https://api.github.com/repos/julianfssen/mockoverflow' demo_url='https://mockoverflow.herokuapp.com/'/>
 			  	</div>
 			  </div>
 			  <div>
-			  	<div className='text-3xl font-bold my-5'>Writings</div>
+			  	<div className='text-3xl font-bold mt-10 underline'>Writings</div>
+			  	<div className='text-xl my-5'>Coming soon!</div>
 			  </div>
 			</div>
 		</React.Fragment>

@@ -7,6 +7,7 @@ import { IconContext } from 'react-icons';
 
 ReactDOM.render(
   <React.StrictMode>
+		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

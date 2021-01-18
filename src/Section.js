@@ -47,7 +47,7 @@ function Home(){
 		<React.Fragment>
 			<div className='space-y-5'>
 			  <div>
-			  	<img className='mx-auto rounded-full h-60 mt-10' src='me_and_jq.png' alt='Me and JQ Baby' />
+			  	<img className='mx-auto rounded-full h-60 mt-10' src='me.jpeg' alt='Me and JQ Baby' />
 			  </div>
 				<div className='flex justify-center space-x-5'>
 					<a href='https://github.com/julianfssen' target='blank'>
